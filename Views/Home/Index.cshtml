@@ -1,40 +1,40 @@
-﻿@{ Layout = "_Layout";}
-<section class="jumbotron text-center"  >
-  <div class="container">
-    <h1>Books</h1>
-    <p class="lead text-muted">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
-      a galley of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into electron yes 
-    </p>
-    <p>
-      <a href="#" class="btn btn-primary my-2">Search books</a>
-    </p>
-  </div>
+﻿
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>Books</h1>
+        <p class="lead text-muted">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electron
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Search books</a>
+        </p>
+    </div>
 </section>
 
 <div class="py-5 bg-light" id="similarBooks">
-  <h3 class="h3">Similar books</h3>
-  <div class="row">
-    @for (int i = 0; i < 5; i++)
-    {
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <h3 class="card-title">book.Title</h3>
-            <p class="card-text">book.Description</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
-              </div>
-              <small class="text-muted">book.Author</small>
+    <h3 class="h3">Similar books</h3>
+    <div class="row">
+        @for (int i = 0; i < 5; i++)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                        <h3 class="card-title">book.Title</h3>
+                        <p class="card-text">book.Description</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+                            </div>
+                            <small class="text-muted">book.Author</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    }
+        }
 
-  </div>
+    </div>
 </div>
-    
+

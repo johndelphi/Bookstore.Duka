@@ -1,38 +1,33 @@
 ﻿@model Bookstore.Models.Books
-  <header>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </header>
-  <div class="container">
+<div class="container">
     <h3 class="display-4">Add new book</h3>
     <form method="post">
-      <div class="form-group">
-        <label asp-for="Title">Title</label>
-        <input asp-for="Title" class="form-control" />
-      </div>
+        <div class="form-group">
+            <label asp-for="Title">Title</label>
+            <input asp-for="Title" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        <label asp-for="Author">Author</label>
-        <input asp-for="Author" class="form-control" />
-      </div>
+        <div class="form-group">
+            <label asp-for="Author">Author</label>
+            <input asp-for="Author" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        <label asp-for="Description">Description</label>
-        <textarea asp-for="Description"></textarea>
-      </div>
+        <div class="form-group">
+            <label asp-for="Description">Description</label>
+            <textarea asp-for="Description"></textarea>
+        </div>
 
-      <div class="form-group">
-        <label asp-for="Totalpages">Totalpages</label>
-        <input asp-for="Totalpages" class="form-control" />
-      </div>
+        <div class="form-group">
+            <label asp-for="Totalpages">Totalpages</label>
+            <input asp-for="Totalpages" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        <label asp-for="Language">Language</label>
-        <input asp-for="Language" class="form-control" />
-      </div>
-      <div class="form-group">
-        <input type="submit" />
-      </div>
+        <div class="form-group">
+            <label asp-for="Language">Language</label>
+            <input asp-for="Language" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" />
+        </div>
     </form>
-  </div>
+</div>
