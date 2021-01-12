@@ -6,10 +6,19 @@
   <title>Book store</title>
   <environment include="Development">
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
   </environment>
-  <environment exclude="production">
+  <environment exclude="Developmet">
+    @*@<link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet"
+              href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              integrity=""
+              crossorigin="anonymous">
 
-    <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   </environment>
 
 
@@ -21,9 +30,7 @@
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
       <div class="container">
         <a class="navbar-brand " href="/">
-          <img src="~/images/LOGO.png" width="30" height="30" />
-          book store
-        </a>
+          <img src="" width="30" height="30" /> Duka</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,10 +45,13 @@
               <a class="nav-link text-dark " href="/home/About"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark " href="/home/ContactUs">Conduct</a>
+              <a class="nav-link text-dark " href="/home/ContactUs">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark " href="/book/GetAllBooks">ALLbooks</a>
+              <a class="nav-link text-dark " href="/book/GetAllBooks">Allbooks</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="/book/AddNewBook">AddnewBook</a>
             </li>
           </ul>
           <ul class="navbar-nav">
