@@ -33,7 +33,7 @@ namespace Bookstore.Controllers
       return View();
     }
     [HttpPost]
-    public ViewResult AddNewBook(Books Book)
+    public ViewResult AddNewBook(Books BookModel)
     { 
       return View();
     }

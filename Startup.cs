@@ -18,7 +18,7 @@ namespace Bookstore
     {
       services.AddControllersWithViews();
 #if DEBUG
-    services.AddRazorPages().AddRazorRuntimeCompilation();
+            // `defd  services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif
         }
     
