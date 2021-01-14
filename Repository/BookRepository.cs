@@ -8,6 +8,9 @@ namespace Bookstore.Repository
 {
   public class BookRepository
   {
+    //    public int AddNewBook(Books model)
+       // {
+      //  }
     public List<Books> GetBooks()
     {
       return DataSource();
